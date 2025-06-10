@@ -77,25 +77,25 @@ To run this project locally, follow the steps below:
 
 ### 2. Setup Backend
 
-- cd backend
-  npm install
+- 1. cd backend
+  2. npm install
 
-- Create a .env file in the backend directory with the following (example):
-  PORT=5000
-  MONGO_URI=your_mongodb_connection_string
-  JWT_SECRET=your_jwt_secret
-  CLOUDINARY_CLOUD_NAME=your_cloud_name
-  CLOUDINARY_API_KEY=your_api_key
-  CLOUDINARY_API_SECRET=your_api_secret
+- 3. Create a .env file in the backend directory with the following (example):
+      PORT=5000
+      MONGO_URI=your_mongodb_connection_string
+      JWT_SECRET=your_jwt_secret
+      CLOUDINARY_CLOUD_NAME=your_cloud_name
+      CLOUDINARY_API_KEY=your_api_key
+      CLOUDINARY_API_SECRET=your_api_secret
 
-- Start the backend server:
-  npm run dev
+- 4. Start the backend server:
+     npm run dev
 
 ### 3. Setup Frontend
 
-- cd ../frontend
-  npm install
-  npm start
+- 1. cd ../frontend
+  2. npm install
+  3. npm start
 
 ## 📬 Contact
 
