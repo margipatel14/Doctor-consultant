@@ -73,29 +73,80 @@ Here are some example test cases that validate core features:
 
 To run this project locally, follow the steps below:
 
+---
+
 ### 1. Clone the Repository
+
+```bash
+git clone https://github.com/margipatel14/Doctor-consultant.git
+cd Doctor-consultant
+```
+
+---
 
 ### 2. Setup Backend
 
- 1. cd backend
- 2. npm install
+```bash
+cd backend
+npm install
+```
 
- 3. Create a .env file in the backend directory with the following (example):
-      PORT=5000
-      MONGO_URI=your_mongodb_connection_string
-      JWT_SECRET=your_jwt_secret
-      CLOUDINARY_CLOUD_NAME=your_cloud_name
-      CLOUDINARY_API_KEY=your_api_key
-      CLOUDINARY_API_SECRET=your_api_secret
+Create a `.env` file in the `backend` directory with the following content:
 
-  4. Start the backend server:
-     npm run dev
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
+Start the backend server:
+
+```bash
+npm run dev
+```
+
+---
 
 ### 3. Setup Frontend
 
-  1. cd ../frontend
-  2. npm install
-  3. npm start
+```bash
+cd ../frontend
+npm install
+```
+Create a `.env` file in the `frontend` directory with the following content:
+
+```env
+VITE_BACKEND_URL="http://localhost:4000"
+```
+Start the frontend server:
+
+```bash
+npm start
+```
+
+### 3. Setup Admin
+
+```bash
+cd ../admin
+npm install
+```
+Create a `.env` file in the `admin` directory with the following content:
+
+```env
+VITE_CURRENCY="₹"
+VITE_BACKEND_URL="http://localhost:4000"
+ADMIN_EMAIL="Admin Email ID"
+ADMIN_PASSWORD="Password"
+```
+Start the admin server:
+
+```bash
+npm start
+```
+
 
 ## 📬 Contact
 
