@@ -127,7 +127,7 @@ Start the frontend server:
 npm start
 ```
 
-### 3. Setup Admin
+### 4. Setup Admin
 
 ```bash
 cd ../admin
